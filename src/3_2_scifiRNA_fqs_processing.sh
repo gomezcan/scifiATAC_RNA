@@ -1,8 +1,9 @@
 #!/bin/bash
+
 ########## Load Modules #########
-#conda init
-#conda activate scATAC
-# 
+# conda init
+# conda activate scATAC
+# requares umi tools and cutadapt
 ########## Command Lines to Run ######### 
 
 
