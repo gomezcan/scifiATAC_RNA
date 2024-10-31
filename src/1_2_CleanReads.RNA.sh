@@ -1,17 +1,4 @@
 #!/bin/bash
-########## BATCH Lines for Resource Request ##########
-#SBATCH --time=4:00:00          	# Limit of wall clock time - how long the job will run (same as -t)
-#SBATCH --nodes=1            		# Number of different nodes - could be an exact number or a range of nodes (same as -N)
-#SBATCH --ntasks-per-node=1    		# Number of tasks - how many tasks (nodes) that you require (same as -n)
-#SBATCH --cpus-per-task=36	     	# Number of CPUs (or cores) per task (same as -c)
-#SBATCH --mem=100G           	   	# Specify the real memory required per node. (20G)
-#SBATCH --job-name=umi_tools.RNA.v2.v2    	# You can give your job a name for easier identification (same as -J)
-#SBATCH --mail-user=gomezcan@umich.edu
-#SBATCH --mail-type=BEGIN,END
-#SBATCH --account=amarand0
-#SBATCH --partition=standard
-#SBATCH --output=/home/gomezcan/Projects/fabio_home/Projects/2_PopulationStress_maize/3_1_scifiCleaning_RawData/2_CleanReads/%x-%j.log
-## /home/gomezcan/Projects/fabio_home/Projects/MuDR_screening/ 
 
 ########## Load Modules #########
 ml Bioinformatics bcl2fastq2/2.20.0.422-oxq6lf3
